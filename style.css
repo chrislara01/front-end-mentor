@@ -31,8 +31,12 @@ h1, p {
 }
 
 body {
-    height: 100vh;
     background-color: var(--clr-slate-300);
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
 
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@ body {
     align-items: center;
     gap: var(--pd-300);
 
-    padding: var(--pd-200) var(--pd-200) var(--pd-500) var(--pd-200);
+    margin: var(--pd-200) var(--pd-200) var(--pd-500) var(--pd-200);
 }
 
 .card__image {
@@ -78,8 +82,4 @@ body {
     text-align: center;
     color: var(--clr-slate-500);
     padding-inline: var(--pd-200);
-}
-
-@media screen and (max-width: 350px) {
-    
 }
