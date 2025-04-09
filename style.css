@@ -15,6 +15,10 @@
     src: url(fonts/Figtree/Figtree-VariableFont_wght.ttf);
 }
 
+a {
+    text-decoration: none;
+}
+
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
@@ -98,6 +102,10 @@ body{
     border-radius: var(--pd-50);
 
     width: fit-content;
+}
+
+.card-text__title:is(:hover, :active, :focus) {
+    color: var(--clr-yellow);
 }
 
 .card-avatar {
