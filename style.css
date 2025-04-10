@@ -1,0 +1,134 @@
+:root {
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+
+    --pd-50: 8px;
+    --pd-100: 12px;
+    --pd-150: 14px;
+    --pd-200: 24px;
+    --pd-250: 28px;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Semibold";
+    src: url("assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url("assets/fonts/static/Inter-Bold.ttf");
+}
+
+h1,
+h2,
+h3,
+p,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: var(--pd-150);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--clr-grey-900);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--clr-grey-800);
+    border-radius: var(--pd-100);
+}
+
+.card-content {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--pd-250);
+}
+
+.card-avatar {
+    padding-inline: var(--pd-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: var(--pd-250);
+}
+
+.card-avatar__image {
+    max-width: 88px;
+
+    border-radius: 50%;
+}
+
+.card-avatar-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.card-avatar__name {
+    color: var(--clr-white);
+    font-family: "Inter-Semibold";
+    font-size: var(--pd-200);
+}
+
+.card-avatar__location {
+    font-family: "Inter-Semibold";
+    font-size: var(--pd-150);
+    color: var(--clr-green);
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.social-media__link {
+    background-color: var(--clr-grey-700);
+    color: var(--clr-white);
+    font-family: "Inter-Bold";
+    font-size: var(--pd-150);
+    width: 100%;
+    text-align: center;
+    padding: var(--pd-150);
+    border-radius: var(--pd-50);
+
+    box-sizing: border-box;
+}
+
+.social-media__link:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-grey-900);
+}
+
+p {
+    color: white;
+    font-family: "Inter";
+}
