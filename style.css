@@ -32,7 +32,7 @@
 
 body {
     background-color: var(--clr-stone-100);
-
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -48,11 +48,9 @@ main {
 
 article {
     max-width: 70ch;
-
     display: flex;
     flex-direction: column;
     gap: 24px;
-
 }
 
 article>img {
@@ -60,9 +58,15 @@ article>img {
     border-radius: 15px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 h1 {
     font-family: "Young-Serif-Regular";
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--clr-stone-900);
     line-height: 1;
 }
@@ -172,4 +176,29 @@ tr:last-child {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+
+    article {
+        padding: 0;
+        margin: 0;
+
+        box-sizing: border-box;
+    } 
+
+    article > img {
+        border-radius: 0;
+    }
+
+    .content {
+        padding-inline: 32px;
+        padding-bottom: 40px;
+    }
 }
