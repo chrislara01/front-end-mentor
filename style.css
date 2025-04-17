@@ -1,0 +1,52 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+
+    --clr-stone-150: hsl(30, 18%, 87%);
+    --clr-stone-100: hsl(30, 54%, 90%);
+    --clr-stone-600: hsl(30, 10%, 34%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+
+    --clr-brown-800: hsl(14, 45%, 36%);
+
+    --clr-rose-800: hsl(332, 51%, 32%);
+    --clr-rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: "Young-Serif-Regular";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+body {
+    background-color: var(--clr-rose-50);
+    
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin-block: 100px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--clr-white);
+}
+
+article {
+    max-width: 80ch;
+}
+
+article > img {
+    width: 100%;
+    border-radius: 15px;
+}
