@@ -142,7 +142,13 @@ tr {
 }
 
 td {
-    padding: 8px 32px;
+    padding-block: 8px;
+    padding-inline-start: 32px;
+}
+
+td > strong {
+    font-weight: 600;
+    color: var(--clr-brown-800);
 }
 
 /* Removes the last row's border to avoid an extra line */
