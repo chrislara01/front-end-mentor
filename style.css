@@ -38,12 +38,10 @@ body {
 }
 
 main {
-    margin-block: 100px;
+    margin-block: 150px;
     padding: 50px;
     border-radius: 25px;
     background-color: var(--clr-white);
-    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1) ;
-
 }
 
 article {
@@ -86,7 +84,7 @@ table {
     font-family: "Outfit";
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--clr-stone-900);
+    color: var(--clr-stone-600);
 }
 
 ul>li::marker,
