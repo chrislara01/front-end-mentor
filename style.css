@@ -10,6 +10,8 @@
 
     --clr-rose-800: hsl(332, 51%, 32%);
     --clr-rose-50: hsl(330, 100%, 98%);
+
+    font-size: 16px;
 }
 
 @font-face {
@@ -29,8 +31,8 @@
 }
 
 body {
-    background-color: var(--clr-rose-50);
-    
+    background-color: var(--clr-stone-100);
+
     display: flex;
     justify-content: center;
 }
@@ -43,10 +45,84 @@ main {
 }
 
 article {
-    max-width: 80ch;
+    max-width: 70ch;
 }
 
-article > img {
+article>img {
     width: 100%;
     border-radius: 15px;
+}
+
+h1 {
+    font-family: "Young-Serif-Regular";
+    font-size: 2.5rem;
+    color: var(--clr-stone-900);
+}
+
+h2 {
+    font-family: "Young-Serif-Regular";
+    font-size: 1.8rem;
+    color: var(--clr-brown-800);
+}
+
+p,
+ul,
+ol,
+table {
+    font-family: "Outfit";
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--clr-stone-900);
+}
+
+ul>li::marker,
+ol>li::marker {
+    color: var(--clr-brown-800);
+}
+
+ol>li::marker {
+    font-weight: 600;
+}
+
+ul>li,
+ol>li{
+ margin-inline-start: 25px;
+ padding-inline-start: 10px;
+ padding-block: 5px;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.preparation-time {
+    background-color: var(--clr-rose-50);
+    padding: 20px 25px;
+    border-radius: 15px;
+}
+
+.preparation-time>h2 {
+    font-family: "Outfit";
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--clr-rose-800);
+}
+
+.preparation-time>ul>li::marker {
+    color: var(--clr-rose-800);
+}
+
+table {
+    border-collapse: collapse; /* Ensures borders don't double up */
+    width: 100%; /* Optional: Adjust as needed */
+}
+
+/* Adds a border only below each row */
+tr {
+    border-bottom: 1px solid #ddd; /* Adjust color & thickness */
+}
+
+/* Removes the last row's border to avoid an extra line */
+tr:last-child {
+    border-bottom: none;
 }
