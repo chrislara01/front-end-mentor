@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --white: hsl(0, 0%, 100%);
+
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--cream);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    display: flex;
+    width: min(600px, 90vw);
+
+    background-color: var(--white);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.product-image {
+    flex: 0 0 50%;
+}
+
+.product-card__image {
+    max-width: 300px;
+    height: 100%;
+    
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.product-content {
+    flex: 0 0 50%;
+    padding: 32px;
+
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product__title {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: var(--green-700);
+    line-height: 1;
+}
+
+.product__category {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    color: var(--grey);
+    line-height: 1;
+}
+
+.product__description {
+    font-family: "Montserrat";
+    color: var(--grey);
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.product-price__discount {
+    font-family: "Fraunces";
+    color: var(--green-500);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.product-price__regular {
+    color: var(--grey);
+    text-decoration: line-through;
+}
+
+del {
+    color: var(--grey);
+}
+
+.product-card__add-cart {
+    text-decoration: none;
+    background-color: var(--green-500);
+    color: var(--white);
+
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
