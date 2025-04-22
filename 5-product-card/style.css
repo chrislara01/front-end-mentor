@@ -139,6 +139,16 @@ main {
     gap: 8px;
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
 @media screen and (width < 675px){
     .product-card {
         max-width: 350px;

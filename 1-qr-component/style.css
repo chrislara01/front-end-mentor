@@ -88,3 +88,13 @@ main {
     color: var(--clr-slate-500);
     padding-inline: var(--pd-200);
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}

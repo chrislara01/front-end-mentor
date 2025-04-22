@@ -132,3 +132,13 @@ p {
     color: white;
     font-family: "Inter";
 }
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
