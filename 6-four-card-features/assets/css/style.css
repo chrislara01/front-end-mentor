@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Poppins-Thin";
-    src: url(fonts/Poppins-Thin.ttf);
+    src: url(../fonts/Poppins-Thin.ttf);
 }
 
 @font-face {
     font-family: "Poppins-Medium";
-    src: url(fonts/Poppins-Medium.ttf);
+    src: url(../fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: "Poppins-Regular";
-    src: url(fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 
 :root {
@@ -178,6 +178,7 @@ header {
 .attribution {
     font-size: 11px;
     text-align: center;
+    font-family: "Poppins-Regular";
 }
 
 .attribution a {

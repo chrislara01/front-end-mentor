@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: "Young-Serif-Regular";
-    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
 @font-face {
     font-family: "Outfit";
-    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
 * {
@@ -34,7 +34,8 @@ body {
     background-color: var(--clr-stone-100);
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {

@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "Figtree";
-    src: url(fonts/Figtree/Figtree-VariableFont_wght.ttf);
+    src: url(../fonts/Figtree/Figtree-VariableFont_wght.ttf);
 }
 
 a {
@@ -64,8 +64,15 @@ body{
     min-height: 100vh;
 
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
 }
 
 .card {
@@ -123,9 +130,11 @@ body{
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: var(--clr-gray-950);
+    font-family: "Figtree";
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 70%, 33%);
     text-decoration: none;
 }

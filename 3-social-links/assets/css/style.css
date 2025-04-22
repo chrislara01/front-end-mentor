@@ -14,17 +14,17 @@
 
 @font-face {
     font-family: "Inter";
-    src: url("assets/fonts/static/Inter-Regular.ttf");
+    src: url("../fonts/static/Inter-Regular.ttf");
 }
 
 @font-face {
     font-family: "Inter-Semibold";
-    src: url("assets/fonts/static/Inter-SemiBold.ttf");
+    src: url("../fonts/static/Inter-SemiBold.ttf");
 }
 
 @font-face {
     font-family: "Inter-Bold";
-    src: url("assets/fonts/static/Inter-Bold.ttf");
+    src: url("../fonts/static/Inter-Bold.ttf");
 }
 
 h1,
@@ -49,8 +49,12 @@ body {
     background-color: var(--clr-grey-900);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+main {
+    padding: 32px;
 }
 
 .card {
