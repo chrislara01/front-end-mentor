@@ -71,6 +71,9 @@ main {
     flex-direction: column;
     gap: 16px;
     border-radius: 8px;
+    position: relative;
+
+    box-shadow: 24px 24px 24px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial:nth-child(1) {
@@ -134,4 +137,14 @@ main {
 
 .testimonial:nth-child(4) .user__image {
     border: 2px solid var(--clr-purple-500);
+}
+
+.background-overlay {
+    position: absolute;
+    z-index: 0;
+    right: 64px;
+}
+
+.background-overlay ~ * {
+    z-index: 1;
 }
