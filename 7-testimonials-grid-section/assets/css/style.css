@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Barlow-500";
+    src: url("../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Barlow-600";
+    src: url("../fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf");
+}
+
+:root {
+    --clr-purple-50: hsl(260, 100%, 95%);
+    --clr-purple-300: hsl(264, 82%, 80%);
+    --clr-purple-500: hsl(263, 55%, 52%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey-100: hsl(214, 17%, 92%);
+    --clr-grey-200: hsl(0, 0%, 81%);
+    --clr-grey-400: hsl(224, 10%, 45%);
+    --clr-grey-500: hsl(217, 19%, 35%);
+    --clr-dark-blue: hsl(219, 29%, 14%);
+    --clr-black: hsl(0, 0%, 7%);
+
+    font-size: 13px;
+    font-family: "Barlow-500";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font: inherit;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 20em);
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-areas: 
+        "one one two five"
+        "three four four five"
+    ;
+    gap: 2em;
+}
+
+.testimonial {
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 8px;
+}
+
+.testimonial:nth-child(1) {
+    grid-area: one;
+    background-color: var(--clr-purple-500);
+    color: var(--clr-grey-100);
+}
+
+.testimonial:nth-child(2) {
+    grid-area: two;
+    background-color: var(--clr-grey-500);
+    color: var(--clr-grey-100);
+}
+
+.testimonial:nth-child(3) {
+    grid-area: three;
+    background-color: var(--clr-white);
+    color: var(--clr-grey-500);
+}
+
+.testimonial:nth-child(4) {
+    grid-area: four;
+    background-color: var(--clr-dark-blue);
+    color: var(--clr-grey-100);
+}
+
+.testimonial:nth-child(5) {
+    background-color: var(--clr-white);
+    grid-area: five;
+    color: var(--clr-grey-500);
+}
+
+.user {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.user__image {
+    border-radius: 50%;
+    height: 28px;
+}
+
+.user__name {
+    font-family: "Barlow-600";
+}
+
+.testimony {
+    font-family: "Barlow-600";
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.testimony__description {
+    line-height: 1.5;
+}
+
+.testimonial:nth-child(1) .user__image {
+    border: 2px solid var(--clr-purple-300);
+}
+
+.testimonial:nth-child(4) .user__image {
+    border: 2px solid var(--clr-purple-500);
+}
