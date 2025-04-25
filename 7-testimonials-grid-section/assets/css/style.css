@@ -140,6 +140,41 @@ main {
     z-index: 1;
 }
 
+@media screen and (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-areas: 
+            "one one"
+            "two five"
+            "three five"
+            "four four"
+        ;
+        gap: 2em;
+    }
+
+    .testimonial:nth-child(1) {
+        grid-area: one;
+    }
+    
+    .testimonial:nth-child(2) {
+        grid-area: two;
+    }
+    
+    .testimonial:nth-child(3) {
+        grid-area: three;
+    }
+    
+    .testimonial:nth-child(4) {
+        grid-area: four;
+    }
+    
+    .testimonial:nth-child(5) {
+        grid-area: five;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         display: grid;
