@@ -38,6 +38,7 @@ body {
 }
 
 main {
+    padding: 40px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -49,8 +50,9 @@ main {
     text-align: center;
 }
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
 
 .container {
@@ -66,7 +68,7 @@ main {
 
 .testimonial {
     box-sizing: border-box;
-    padding: 32px;
+    padding: 34px;
     display: flex;
     flex-direction: column;
     gap: 16px;
