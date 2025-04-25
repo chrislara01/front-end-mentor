@@ -38,7 +38,7 @@ body {
 }
 
 main {
-    padding: 40px;
+    padding: 80px 32px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -57,12 +57,6 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 20em);
-    grid-template-rows: repeat(2, fit-content);
-    grid-template-areas: 
-        "one one two five"
-        "three four four five"
-    ;
     gap: 2em;
 }
 
@@ -79,32 +73,27 @@ main {
 }
 
 .testimonial:nth-child(1) {
-    grid-area: one;
     background-color: var(--clr-purple-500);
     color: var(--clr-grey-100);
 }
 
 .testimonial:nth-child(2) {
-    grid-area: two;
     background-color: var(--clr-grey-500);
     color: var(--clr-grey-100);
 }
 
 .testimonial:nth-child(3) {
-    grid-area: three;
     background-color: var(--clr-white);
     color: var(--clr-grey-500);
 }
 
 .testimonial:nth-child(4) {
-    grid-area: four;
     background-color: var(--clr-dark-blue);
     color: var(--clr-grey-100);
 }
 
 .testimonial:nth-child(5) {
     background-color: var(--clr-white);
-    grid-area: five;
     color: var(--clr-grey-500);
 }
 
@@ -149,4 +138,37 @@ main {
 
 .background-overlay ~ * {
     z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 20em);
+        grid-template-rows: repeat(2, fit-content);
+        grid-template-areas: 
+            "one one two five"
+            "three four four five"
+        ;
+        gap: 2em;
+    }
+
+    .testimonial:nth-child(1) {
+        grid-area: one;
+    }
+    
+    .testimonial:nth-child(2) {
+        grid-area: two;
+    }
+    
+    .testimonial:nth-child(3) {
+        grid-area: three;
+    }
+    
+    .testimonial:nth-child(4) {
+        grid-area: four;
+    }
+    
+    .testimonial:nth-child(5) {
+        grid-area: five;
+    }
 }
